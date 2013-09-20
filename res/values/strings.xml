@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">SquareGame</string>
     <string name="app_desc">A funny game.</string>
+    <string name="btn_novo_jogo">Novo Jogo</string>
+    <string name="btn_menu">Opções</string>
 </resources>

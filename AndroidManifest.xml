@@ -8,10 +8,22 @@
 
     <application android:label="@string/app_name" android:description="@string/app_desc"
                  android:icon="@drawable/ic_launcher" android:debuggable="true">
-        <activity android:name=".MainActivity" android:label="@string/app_name">
+        <activity android:name=".activities.MainActivity" android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.PlayActivity">
+            <intent-filter>
+                <action android:name="squaregame.intent.action.PLAY_ACTIVITY"/>
+                <category android:name="squaregame.intent.category.PLAYABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MenuActivity">
+            <intent-filter>
+                <action android:name="squaregame.intent.action.MENU_ACTIVITY"/>
+                <category android:name="squaregame.intent.category.OPTIONS"/>
             </intent-filter>
         </activity>
     </application>
