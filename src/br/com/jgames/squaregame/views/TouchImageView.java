@@ -55,7 +55,7 @@ public class TouchImageView extends View {
         for (int i = 0; i < positions.length; i++) {
             positions[i] = i;
         }
-        random();
+//        random();
         setFocusable(true);
     }
 
@@ -124,14 +124,17 @@ public class TouchImageView extends View {
 
     public void checkWin() {
         boolean resultado = true;
-        for (int i = 0; i < positions.length; i++) {
-            if (i != positions[i]) {
+        for (int i = 0; i < positions.length - 1; i++) {
+            if (i != (positions[i] - 1)) {
                 resultado = false;
             }
         }
+        if (positions[positions.length - 1] != 0) {
+            resultado = false;
+        }
         if (resultado) {
-            Log.i(CATEGORIA, "Você ganhou!!!");
-            Toast.makeText(context, "Você ganhou!!!", Toast.LENGTH_SHORT).show();
+            Log.i(CATEGORIA, "Parabéns, Você ganhou!!!");
+            Toast.makeText(context, "Parabéns, Você ganhou!!!", Toast.LENGTH_SHORT).show();
         }
     }
 
