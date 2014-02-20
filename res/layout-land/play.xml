@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/main_layout">
+
+    <br.com.jgames.squaregame.views.TouchImageView android:layout_width="wrap_content"
+                                                   android:layout_height="wrap_content"
+                                                   android:id="@+id/touch_image_view"
+                                                   android:layout_toLeftOf="@+id/propaganda"
+                                                   android:layout_toRightOf="@+id/lblMovimentos"
+                                                   android:layout_alignParentTop="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblMovimentos"
+            android:id="@+id/lblMovimentos"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" android:layout_marginTop="30dp" android:layout_marginRight="30dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblPropaganda"
+            android:id="@+id/propaganda" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movimentos"
+            android:layout_alignRight="@+id/lblMovimentos" android:layout_alignLeft="@+id/lblMovimentos"
+            android:layout_below="@+id/lblMovimentos" android:layout_marginTop="4dp" android:text="@string/zero"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblTempo"
+            android:id="@+id/lblTempo"
+            android:layout_alignLeft="@+id/movimentos" android:layout_below="@+id/movimentos"
+            android:layout_marginTop="50dp" android:layout_alignRight="@+id/movimentos"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempo" android:layout_below="@+id/lblTempo" android:layout_alignLeft="@+id/lblTempo"
+            android:layout_alignRight="@+id/lblTempo" android:layout_marginTop="4dp"/>
+    <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometer" android:layout_alignBottom="@+id/tempo"
+            android:layout_alignLeft="@+id/tempo"/>
+</RelativeLayout>

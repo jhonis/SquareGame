@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SquareGame</string>
-    <string name="app_desc">A funny game.</string>
+
+    <string name="app_id">766148230065595</string>
+    <string name="app_name">Square Game</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
     <string name="btn_novo_jogo">Novo Jogo</string>
-    <string name="btn_menu">Opções</string>
+    <string name="btn_menu">Menu</string>
+    <string name="btn_amigos">Amigos</string>
+    <string name="lblMovimentos">Movimentos</string>
+    <string name="lblPropaganda">Propaganda</string>
+    <string name="lblTempo">Tempo</string>
+    <string name="zero">0</string>
+    <string name="TempDAO_onCreate"/>
+    <string name="TempDAO_onUpgrade"/>
+
 </resources>
